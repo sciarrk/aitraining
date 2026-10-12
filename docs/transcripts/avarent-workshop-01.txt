@@ -1,0 +1,72 @@
+TRASCRIZIONE COMPLETAMENTE FITTIZIA PER TRAINING P.R.I.S.M.A.
+Dati, persone, meeting e decisioni sono simulati: non costituiscono impegni reali di AvaRent. Il testo italiano e' per l'esercitazione con documentation-minutes e documentation-deliverables.
+WS01 - Inventario e processo commerciale
+Data: 2026-10-12. Orario: 09:00-10:30 Pacific Time (PT). Canale: Teams simulato.
+Partecipanti inventati: Laura Bianchi, Business Analyst Avanade e facilitatore; Michael Reed, Regional Sales Manager AvaRent; Emily Carter, Community Sales Manager AvaRent; Daniel Brooks, Leasing Agent AvaRent; Sofia Conti, Integration Lead Avanade.
+Nessun approvatore di documento reale. La futura minuta richiedera' validazione successiva.
+
+[09:00] Laura Bianchi: Cominciamo. Anche le conferme di oggi sono simulate. Ci concentriamo sull'inventario e sul processo commerciale, per alimentare un FDD commerciale circoscritto. D365 CE/CRM e' richiesto, ma oggi non scegliamo moduli, licenze o schema e non realizziamo modifiche in Dataverse. Non pretendiamo di esaurire il brief.
+
+[09:02] Michael Reed: AvaRent gestisce oltre 500 community negli USA. L'obiettivo e' tenere le unita' locate. Prima decisione: il pilot riguarda soltanto cinque community del Pacific Northwest, con me come referente commerciale. L'estensione nationwide viene valutata solo dopo l'esito del pilot; non e' un avvio gia' autorizzato.
+
+[09:04] Emily Carter: Confermo quel perimetro. Per lavorare sulla disponibilita' mi servono occupazione, fine prevista e uscita confermata. Quando dico fine prevista non intendo che possiamo promettere subito l'appartamento a qualcun altro. Michael, dobbiamo distinguere questo dalla gestione del contratto, altrimenti rischiamo di discutere due processi diversi.
+
+[09:06] Michael Reed: Esatto. Contrattualistica, pricing e leasing agreement tracking sono fuori scope e restano al fornitore terzo. I dati operativi che hai citato rimangono necessari al CRM. Non chiediamo di gestire clausole o firme, ma di capire se e quando un'unita' puo' essere proposta senza creare una promessa errata.
+
+[09:09] Daniel Brooks: Il periodo iniziale e' di dodici mesi, poi si continua mese per mese. Per i tenant mese per mese, per uscire serve un preavviso di trenta giorni. Mi correggo rispetto a come lo descrivo a volte: la scadenza annuale non rende automaticamente disponibile l'unita'. Un tenant puo' restare e noi dobbiamo saperlo nella ricerca.
+
+[09:12] Emily Carter: Voglio avvisi a sessanta e trenta giorni dall'uscita programmata. Una data puo' essere conosciuta prima del preavviso minimo. Se viene estesa o cambiata, gli avvisi successivi devono seguire la nuova data e non riproporre quella superata. L'agente deve riconoscere il cambiamento; non sto indicando come implementarlo.
+
+[09:15] Laura Bianchi: Seconda decisione, con Emily referente: la disponibilita' futura non deriva dalla scadenza annuale, ma dalla situazione operativa e dall'uscita confermata, distinguendo le previsioni. Confermiamo anche il criterio degli avvisi sessanta/trenta giorni e dell'aggiornamento quando cambia l'uscita. La modalita' tecnica rimane da analizzare. Vi torna questa distinzione?
+
+[09:17] Michael Reed: Si', confermo entrambe le decisioni; Emily annuisce. Aggiungo un'azione mia: entro 2026-10-14 porto i nomi delle cinque community e i gruppi di competenza degli utenti. Oggi i nomi non sono disponibili. Nel pilot useremo dati soltanto di quelle cinque, senza caricare inventario nationwide per comodita'.
+
+[09:20] Daniel Brooks: Per il prospect raccogliamo nome, indirizzo, telefono ed email. Le preferenze comprendono ingresso desiderato, camere, bagni, piano, vista, pet e special requests. Alcune richieste sono negoziabili, altre indispensabili: vorrei distinguere i casi negli esempi, evitando che una ricerca senza risultato significhi semplicemente che manca un dato.
+
+[09:23] Emily Carter: Arrivano dal sito esterno, per telefono oppure walk-in. Dobbiamo conservare interazioni e agenti coinvolti: chiamata, visita, ricontatto. La conclusione va attribuita all'agente piu' influente, non necessariamente all'ultimo che ha inserito una nota. Daniel puo' accompagnare la visita anche quando il primo contatto e' stato gestito da un collega.
+
+[09:25] Laura Bianchi: Qui resta un punto aperto: come riconosciamo l'agente piu' influente e chi risolve un disaccordo? Emily, portiamo esempi prima di fissare una regola. Non trasformo l'ultimo contatto in una decisione implicita. Manteniamo il requisito di attribuzione, ma il criterio e l'eventuale rettifica vanno ancora concordati.
+
+[09:28] Daniel Brooks: L'inventario deve permettere di passare da community a edificio a unita'. Cerco disponibilita' attuale oppure futura alla data richiesta, con quelle preferenze. Prendo l'azione di preparare entro 2026-10-14 casi di ricerca, matching e lista d'attesa, includendo uscite spostate, richieste flessibili e un prospect interessato a piu' community.
+
+[09:31] Michael Reed: Se non c'e' una corrispondenza nei prossimi trenta giorni proponiamo la lista d'attesa. Pero' trenta esatti devono valere, non ventinove: includiamo il giorno trenta; dal trentuno siamo oltre quell'orizzonte. La ricerca futura alla data richiesta rimane utile anche piu' avanti. Non voglio perdere quei prospect.
+
+[09:34] Daniel Brooks: Terza decisione, la seguo io: l'orizzonte d'attesa include il giorno trenta e valuta la compatibilita' con l'ingresso desiderato. Il prospect puo' indicare piu' community e tipi di unita'. Il ricontatto avviene almeno ogni quattordici giorni: intervallo massimo quattordici, non quindici. Emily, intendevi questo con non meno frequentemente?
+
+[09:37] Laura Bianchi: Emily conferma e io registro il limite. Rimane aperto come tradurre trenta e quattordici giorni in orari, timezone, calendario lavorativo e automazione; non stiamo promettendo un invio automatico. Daniel includera' un caso al confine. Le preferenze possono cambiare al ricontatto e devono restare utili per il matching successivo.
+
+[09:40] Michael Reed: Prestige prevede agenti dedicati alle unita' di lusso, anche nella lista d'attesa. Va mantenuto nell'analisi commerciale, non rimandato arbitrariamente fuori perimetro. La disponibilita' e le preferenze restano importanti anche li'. Ci serve ancora chiarire come riconoscere le unita' Prestige e gestire il passaggio a un agente dedicato.
+
+[09:43] Emily Carter: Il segnale high-value e' diverso. Quarta decisione, ne sono referente: l'indicatore viola viene impostato manualmente e non arriva dall'import. Un tenant high-value non diventa automaticamente Prestige. Potrebbe occupare un'unita' ordinaria. Voglio che il colore aiuti l'agente, senza inventare una classificazione economica che oggi non abbiamo definito.
+
+[09:45] Laura Bianchi: Per l'approvazione propongo una quinta decisione commerciale, referente Emily: ogni nuovo tenant passa dal Community Sales Manager. Lo stato operativo "Approvato per ingresso" deve essere raggiunto prima della conferma d'ingresso. Non significa contratto firmato. Possiamo usarlo come descrizione funzionale, lasciando da analizzare gli altri stati e i passaggi?
+
+[09:48] Daniel Brooks: D'accordo. Io posso preparare la pratica, ma non confermare l'ingresso saltando quell'approvazione. Per preparare l'unita' usiamo una checklist: pulizia, walk through, welcome basket, BBQ. Non e' un elenco chiuso e non tutte le attivita' sono necessariamente identiche in ogni community; Emily deve aiutarci a distinguere le varianti.
+
+[09:50] Emily Carter: Confermo la quinta decisione e la separazione dalla firma. Mi assegno l'azione di fornire entro 2026-10-16 stati operativi, checklist e template email. Portero' varianti ed esempi, non una checklist definitiva. Vorrei anche verificare cosa accade quando una pratica torna all'agente per informazioni mancanti prima dell'approvazione.
+
+[09:53] Michael Reed: Confermo collegialmente le decisioni tre, quattro e cinque; Daniel e Sofia confermano. Prestige resta da dettagliare, senza confonderlo con high-value. Le decisioni definiscono criteri commerciali di lavoro per il training, non approvano un documento. I casi di Daniel e gli stati di Emily serviranno a verificarle nella minuta successiva.
+
+[09:56] Sofia Conti: Dal sito terzo arriva ogni notte un file con contatti: nome, indirizzo, telefono, email; desiderata: ingresso, camere, bagni e richieste speciali. Non presumo che includa tutte le altre preferenze. Mi assegno esempio file e chiarimenti d'integrazione entro 2026-10-15. Formato, protocollo, gestione errori e SLA non sono ancora definiti.
+
+[09:59] Daniel Brooks: Potremmo deduplicare sull'email... aspetta, abbiamo coppie con telefono condiviso e prospect senza email. Anche l'email puo' essere comune alla famiglia. Quindi la mia e' una proposta, non una decisione finale. Se trattiamo due persone come una sola perdiamo preferenze e storia delle conversazioni, oltre all'attribuzione dell'agente.
+
+[10:02] Sofia Conti: Resta aperto il criterio di deduplica, inclusa la gestione dei dubbi. L'import non deve sovrascrivere l'indicatore high-value o altri campi mantenuti manualmente. Nell'esempio distinguiamo valori assenti e modificati, senza fingere uno schema CSV gia' concordato. Dobbiamo anche verificare la provenienza dei dati operativi d'occupazione, separatamente dal file prospect.
+
+[10:05] Emily Carter: Le email a tenant e prospect devono includere il logo aziendale. Per privacy e consensi serve una conferma, non basta avere un indirizzo. Il brief chiede anche i compleanni, ma la data di nascita deve essere facoltativa. Non voglio chiedere all'agente di compilarla comunque per poter proseguire.
+
+[10:08] Laura Bianchi: Restano aperti finalita', base giuridica, consensi applicabili e trattamento del ventinove febbraio. La richiesta compleanni non contiene gia' una decisione privacy: va approfondita, compresa l'eventuale comunicazione. Emily puo' mostrare i template, ma oggi non autorizziamo invii. Registriamo la data facoltativa senza inventare una politica legale approvata.
+
+[10:11] Michael Reed: Gli utenti AvaRent devono poter aggiungere il sito personale del tenant e vederlo automaticamente sul suo record, per esempio tramite iframe o qualcosa di simile. Vorrei evitare inserimenti seguiti da interventi manuali ogni volta. Pero' se il sito impedisce l'incorporamento dobbiamo riconoscere il limite, non promettere che qualunque indirizzo funzionera'.
+
+[10:14] Sofia Conti: Si', requisito da analizzare. Compatibilita', Content Security Policy, sicurezza dei contenuti e indirizzi consentiti restano da validare. Non aggireremo blocchi del sito o del browser. L'automatismo desiderato non decide la tecnologia; occorre definire anche il comportamento quando il contenuto non puo' essere mostrato e informare correttamente l'utente.
+
+[10:17] Daniel Brooks: Il portale candidature resta nel brief: una candidatura deve produrre un record CRM, consentire follow-up e passare all'approvazione. Non abbiamo definito autenticazione, dettagli del percorso o moduli. Li approfondiremo nel prossimo incontro pertinente. Non consideriamolo escluso solo perche' oggi abbiamo parlato soprattutto dell'agente e dell'inventario.
+
+[10:20] Laura Bianchi: Esatto: tutti i requisiti del brief restano da analizzare. Questo incontro contribuisce al FDD commerciale circoscritto; non abbiamo analizzato ventotto requisiti. In chiusura tocchiamo le altre aree solo per conservarne i vincoli e indirizzarle. Non useremo il silenzio su una funzione come prova che sia stata eliminata dallo scope.
+
+[10:23] Emily Carter: Per WS02 rimangono ticket con triage, assegnazione e risoluzione anche mobile. PRIORITY salute/sicurezza significa riparare entro ventiquattro ore, non soltanto rispondere; inizio conteggio, calendario ed escalation sono aperti. Il manager approva stime superiori a 1000 USD, non pari. Restano portale tenant autenticato per service e survey tenant.
+
+[10:26] Michael Reed: WS03 dovra' approfondire report servizio su aperti, tempi e categorie: un proxy di soddisfazione non equivale alla survey. Commerciale: distribuzione locazioni e pipeline, con formule KPI da definire. Possibile visibilita' per tutti, CEO readonly e cancellazioni riservate a persone chiave richiedono configurazione; i filtri default sulle community di competenza sono UX, non sicurezza.
+
+[10:30] Laura Bianchi: Chiudiamo. Proponiamo, senza schedularli realmente, WS02 "Manutenzione ed esperienza tenant" il 2026-10-14 e WS03 "Integrazioni, sicurezza e reporting" il 2026-10-16, entrambi 09:00-10:30 PT. La minuta futura e' attesa in docs/minutes/WS01_Leasing-1_Inventario-e-processo-commerciale_20261012.md, da validare successivamente senza approvatore reale. Grazie, ci fermiamo qui: nessun impegno reale deriva da questa simulazione.
